@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Search from '../assets/svg/search';
 
 const styles = {
   navLink: `text-white flex mx-[10px]`,
@@ -60,6 +61,13 @@ const Header = () => {
             <div className={styles.navLink}>Learn</div>
           </div>
         </nav>
+        <div className="flex items-center">
+          {/* <ConnectButton /> */}
+          <div className={styles.inputContainer}>
+            <Search />
+            <input className={styles.input} placeholder="Search" />
+          </div>
+        </div>
       </div>
     </div>
   );
